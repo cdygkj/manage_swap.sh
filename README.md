@@ -4,3 +4,6 @@
 如果系统中不存在Swap分区，脚本将提示您输入要创建的Swap文件大小（以MB为单位）。
 脚本将创建Swap文件、设置文件权限、创建Swap文件系统、启用Swap，并在 /etc/fstab 中添加条目以确保系统在启动时自动启用Swap。
 请注意，Swap的大小取决于您的系统性能和需求，不要过度使用Swap，以免影响性能。
+```bash
+curl -sS -O https://raw.githubusercontent.com/cdygkj/manage_swap.sh/main/manage.swap.sh && chmod +x manage.swap.sh && ./manage.swap.sh
+```
